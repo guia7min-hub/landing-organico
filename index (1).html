@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Orgânico Full Automático — VSL Oficial</title>
+<style>
+  :root{
+    --accent:#3b82f6;
+    --accent2:#60a5fa;
+    --bg:#000;
+    --panel:#0b0f17;
+    --muted:#c9d2e4;
+    --text:#ffffff;
+    --card:#111827;
+    --border:rgba(255,255,255,0.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:22px}
+  h1,h2,h3{font-weight:800;text-align:center}
+  h1{font-size:38px;margin-bottom:10px}
+  h2{font-size:30px;margin-bottom:14px}
+  h3{font-size:22px;margin-bottom:10px}
+  .card{background:var(--card);padding:28px;border-radius:14px;border:1px solid var(--border);margin-bottom:28px;box-shadow:0 12px 30px rgba(0,0,0,0.35);opacity:0;transform:translateY(20px);animation:fadeUp 0.7s forwards;}
+  @keyframes fadeUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
+  .video-wrap{position:relative}
+  .video-wrap video{width:100%;border-radius:14px}
+  .video-overlay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;border-radius:50%;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 0 25px rgba(0,0,0,0.55)}
+  .video-overlay span{font-size:48px;color:#fff;margin-left:4px}
+  .benefits{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .benefit-item{background:var(--panel);padding:20px;border-radius:12px;border:1px solid var(--border);text-align:center}
+  .slider{overflow:hidden;position:relative;margin-top:16px}
+  .slider-track{display:flex;gap:12px;animation:scrollAuto 22s linear infinite;width:max-content}
+  .slide{min-width:260px;height:360px;border-radius:12px;object-fit:cover;border:1px solid var(--border)}
+  @keyframes scrollAuto{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  .faq-item{cursor:pointer;margin-bottom:14px;padding:16px;background:var(--panel);border-radius:10px;border:1px solid var(--border)}
+  .faq-item dt{font-weight:700;font-size:18px}
+  .faq-item dd{display:none;color:var(--muted);margin-top:8px;font-size:16px;line-height:1.7}
+  #float-cta{display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--accent);padding:16px 30px;border-radius:14px;font-size:18px;font-weight:800;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,0.45);z-index:999;animation:glowPulse 2s infinite}
+  @media(max-width:780px){#float-cta{display:block}}
+  @keyframes glowPulse{0%{box-shadow:0 0 10px rgba(59,130,246,0.4)}50%{box-shadow:0 0 22px rgba(59,130,246,1)}100%{box-shadow:0 0 10px rgba(59,130,246,0.4)}}
+  @media(max-width:720px){.benefits{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a id="float-cta" href="#oferta-final">Garantir Acesso Agora</a>
+<div class="wrap">
+  <section class="card">
+    <h2>Atenção!</h2>
+    <p style="text-align:center;font-size:18px;color:var(--muted)">Esta aula pode sair do ar a qualquer momento. Assista enquanto está disponível.</p>
+  </section>
+  <section class="card">
+    <h2>Aula Completa</h2>
+    <div class="video-wrap">
+      <div class="video-overlay" onclick="playVideo(this)"><span>▶</span></div>
+      <video playsinline>
+        <source src="https://escolaonline.pro/wp-content/uploads/2025/07/AULA-GRATUITA.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Benefícios do Método</h2>
+    <div class="benefits">
+      <div class="benefit-item"><h3>100% Sem Investir</h3><p>Totalmente orgânico, zero anúncios.</p></div>
+      <div class="benefit-item"><h3>100% Sem Aparecer</h3><p>Não precisa gravar nenhum vídeo.</p></div>
+      <div class="benefit-item"><h3>Venda no Automático</h3><p>Estrutura funcionando 24h.</p></div>
+      <div class="benefit-item"><h3>Processo Simples</h3><p>Replicável para qualquer nicho.</p></div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>O Que Você Vai Aprender</h2>
+    <ul style="font-size:17px;color:var(--muted);line-height:1.9;text-align:center">
+      <li><strong>1. Base:</strong> Estrutura que transforma sua página em máquina de vendas.</li>
+      <li><strong>2. Crescimento:</strong> Viralize e alcance 50 mil seguidores.</li>
+      <li><strong>3. Produto em 30 min:</strong> Criação com IA + plataforma pronta para receber pagamentos.</li>
+      <li><strong>4. Vendas Automáticas:</strong> Robô plugado 24h.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Depoimentos Reais</h2>
+    <div class="slider">
+      <div class="slider-track">
+        <img class="slide" src="https://drive.google.com/uc?export=view&id=1WGXblcS4Nnsh9aD78X52-3F2F2Abn-rA">
+        <img class="slide" src="https://drive.google.com/uc?export=view&id=1DokJEYC_SRAxDCrL5ezmzEZ0qSdRSm3y">
+        <img class="slide" src="https://drive.google.com/uc?export=view&id=16jOVzRDTbNDc3fHgWo00WdXYpfnjbcA-">
+        <img class="slide" src="https://drive.google.com/uc?export=view&id=1s-KSV8imEejgy6i0UzvWLtaxgwiHJQDx">
+        <img class="slide" src="https://drive.google.com/uc?export=view&id=1h3zH9n_Yz0mq7hKSvIHdss68OUG4MUjl">
+        <img class="slide" src="https://drive.google.com/uc?export=view&id=1WGXblcS4Nnsh9aD78X52-3F2F2Abn-rA">
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <h2 style="font-size:32px">🎁 BÔNUS ESPECIAIS (TOTAL R$236,70)</h2>
+    <div style="text-align:center;font-size:20px;line-height:2;color:var(--muted);margin-top:15px">
+      <strong style="color:#fff;font-size:24px">BÔNUS 1 — Pack de Vídeos Virais</strong><br>300 vídeos prontos. De R$19,90 por R$0,00.<br><br>
+      <strong style="color:#fff;font-size:24px">BÔNUS 2 — Automações de Vendas</strong><br>Fluxos que já geraram +50 mil reais. De R$59,90 por R$0,00.<br><br>
+      <strong style="color:#fff;font-size:24px">BÔNUS 3 — Grupo VIP</strong><br>Conteúdo, networking e ajuda. De R$19,90 por R$0,00.<br><br>
+      <strong style="color:#fff;font-size:26px">Total real: R$236,70 incluído na oferta.</strong>
+    </div>
+  </section>
+  <section class="card" id="oferta-final" style="text-align:center">
+    <h2>Oferta Especial</h2>
+    <p style="color:var(--muted);text-decoration:line-through">Valor total: R$236,70</p>
+    <h2 style="font-size:36px;margin-top:10px">HOJE POR R$37</h2>
+    <p style="color:var(--muted);margin-top:8px">Acesso imediato • Pagamento seguro</p>
+    <a href="https://pay.kiwify.com.br/zJ8H9Y9?afid=P3zk3Ao0" class="btn" style="padding:16px 30px;display:inline-block;margin-top:16px;background:var(--accent);border-radius:14px;font-weight:800;color:#fff;box-shadow:0 0 20px var(--accent);animation:glowPulse 2s infinite;">Garantir Acesso Agora</a>
+  </section>
+  <section class="card">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq">
+      <div class="faq-item"><dt>Quais são as formas de pagamento?</dt><dd>PIX, cartão e boleto.</dd></div>
+      <div class="faq-item"><dt>Quando recebo acesso?</dt><dd>Imediatamente após o pagamento.</dd></div>
+      <div class="faq-item"><dt>É garantido que vou ter resultados?</dt><dd>Depende da execução. A maioria tem resultados nas primeiras semanas.</dd></div>
+      <div class="faq-item"><dt>Por quanto tempo terei acesso?</dt><dd>Acesso vitalício.</dd></div>
+      <div class="faq-item"><dt>E se eu não gostar?</dt><dd>Você tem 7 dias de garantia total.</dd></div>
+    </div>
+  </section>
+</div>
+<script>
+document.querySelectorAll('.faq-item').forEach(i=>{
+  i.addEventListener('click',()=>{
+    const dd = i.querySelector('dd');
+    dd.style.display = dd.style.display === 'block' ? 'none' : 'block';
+  });
+});
+function playVideo(btn){
+  const wrap = btn.parentElement;
+  const video = wrap.querySelector('video');
+  btn.style.display='none';
+  video.setAttribute('controls','true');
+  video.play();
+}
+</script>
+</body>
+</html>
